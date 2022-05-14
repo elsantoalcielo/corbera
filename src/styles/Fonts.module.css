@@ -1,0 +1,30 @@
+.marker {
+  --side: 18px;
+  width: var(--side);
+  height: var(--side);
+  border-radius: calc(var(--side) / 2);
+  background-color: rgb(77, 175, 255);
+  position: absolute;
+  left: calc(-1 * calc(var(--side) / 2));
+  top: calc(-1 * calc(var(--side) / 2));
+  cursor: pointer;
+}
+
+.markerText {
+  width: 200px;
+  transform: translate(-50%, 10px);
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 18px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  line-height: 15px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.text {
+  padding-bottom: 10px;
+  text-align: justify;
+}
